@@ -1,5 +1,262 @@
+@font-face {
+  font-family:Merriweather ;
+   src: url("assets/fonts/Merriweather/Merriweather-Bold.ttf");
+ }
+ @font-face {
+  font-family: Inter ;
+   src: url("assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+ }
+ body {
+   background-color: black;
+   width: 1440;
+   margin: 0;
+   
+ }
+ * {
+   box-sizing: border-box;
+ }
 .container {
     width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
+    border: tomato solid;
+    
   }
+  .nav {
+    margin-left: auto;
+    
+    border: rgb(182, 192, 35) solid 4px;
+    height: 90px;
+    ;
+    
+  }
+  header {
+    
+    
+    display: flex;
+    
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-item {
+    
+    text-decoration: none;
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 50px;
+/* identical to box height, or 250% */
+
+
+color: #FFFFFF;
+   
+
+  }
+  .nav-link {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: #FFFFFF
+  }
+  .header-container {
+    height: 90px;
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    border: springgreen solid;
+    
+   
+  }
+  a {
+   text-decoration: none; 
+  }
+  .nav-list {
+    list-style: none;
+    
+  
+    margin:20px 90px 840px; 850px;
+  }
+  .logo {
+   
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    margin top: 20px;
+    transition: 0.3s
+  }
+  .logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  }
+  .hero-container {
+   
+    background-image: url('bg.jpg');
+    background-position: center -90px;
+    background-repeat: no-repeat;
+    width: 100%;
+height: 820px;
+left: 0px;
+top: 0px;
+border: rgb(10, 9, 9) solid 6px;
+    
+  }
+  .header-1 {
+    
+    display: flex ;
+    justify-content: space-between;
+    flex-direction: row;
+  
+    align-self: baseline;
+     
+  }
+  .lng {
+    background-color: none;
+    margin-top: 20px;
+   
+  }
+  main {
+    padding-top: 0;
+    
+  }
+  h1 {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120px;
+    color: #FFFFFF;
+  }
+  .text {
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 40px;
+color: #FFFFFF
+
+
+  }
+  .hero-1 {
+    width: 481px;
+    height: 330px;
+    margin-top: 229px;
+  }
+  .hire {
+height: 55px;
+width: 212px;
+left: 0%;
+right: 0%;
+top: 0px;
+
+background: #BDAE82;
+border-radius: 0px
+
+  }
+  .hire-me {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    
+    
+    text-align: center;
+    
+    color: #000000;
+  }
+  li {
+    margin: 15px;
+   text-decoration: none;
+  }
+  .lng {
+color: white;
+  }
+  .lng- {
+    color: white;
+  }
+  .ru {
+    background-color: transparent;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit
+  }
+  .en {
+    background-color: transparent;
+    color: #BDAE82;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    
+  }
+  .section-title {
+    font-family: Merriweather;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 80px;
+color: #BDAE82;
+  display: flex;
+ 
+}
+.section-title:before, .section-title:after {
+  content: " ";
+  flex: 1 1;
+  border-bottom: 1px solid #BDAE82;
+  margin: auto;
+}
+.skills-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
+ 
+}
+.skill-item {
+  border: violet 10px;
+}
+
+
+
+h2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  
+  
+  text-align: center;
+  
+  color: #FFFFFF
+}
+h3 {
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 36px;
+
+
+text-align: center;
+
+color: #FFFFFF;
+}
+.btns {
+  display: flex;
+  justify-content:center ;
+}
+
+
+
+  
+ 
