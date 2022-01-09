@@ -51,7 +51,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 20px;
 line-height: 50px;
-/* identical to box height, or 250% */
+
 
 
 color: #FFFFFF;
@@ -213,18 +213,44 @@ color: #BDAE82;
   border-bottom: 1px solid #BDAE82;
   margin: auto;
 }
-.skills-items {
-  display: flex;
-  justify-content: space-between;
+.skill-items {
+  display:flex;
+  justify-content:space-between;
   flex-wrap: wrap;
   flex-direction: row;
   
  
 }
 .skill-item {
-  border: violet 10px;
+  border: violet 10px dotted;
+  width:320px;
+height: 240px;
+align-items: center;
 }
-
+.cam {
+  width: 62px;
+height: 50px;
+margin-left: 129px;
+top: 0px;
+}
+.vid {
+  width: 62px;
+height: 50px;
+margin-left: 129px;
+top: 0px;
+}
+.img1 {
+  width: 62px;
+height: 50px;
+margin-left: 129px;
+top: 0px
+}
+.mic1 {
+  width: 62px;
+height: 50px;
+margin-left: 129px;
+top: 0px
+}
 
 
 h2 {
@@ -253,10 +279,135 @@ color: #FFFFFF;
 }
 .btns {
   display: flex;
-  justify-content:center ;
+  justify-content:center;
+  margin: 0 -5px
 }
+.btn {
+  width: 220px;
+height: 55px;
+border: #BDAE82 solid 2px;
+background-color: black;
+margin: 0 5px
+}
+.btn1 {
+  width: 220px;
+  height: 55px;
+  border: #BDAE82 solid 2px;
+  background-color: #BDAE82 ;
+}
+.season {
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 40px;
 
 
+text-align: center;
+
+color: #BDAE82;
+}
+ .season1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  
+  
+  text-align: center;
+  
+  color: #000000;
+  
+ }
+ .imgs {
+   margin-top: 60px;
+   margin: 60 -5px
+   
+ }
+.fhoto {
+  margin: 0 5px
+}
+.video-player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vid-btn {
+  position: absolute;
+  width: 129,86px;
+  height: 130px;
+}
+.price-items {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
 
   
- 
+}
+.price-item {
+
+  width: 450px;
+  height: 505px;
+  border: 3px solid #BDAE82;
+}
+.pr-it {
+  display: block;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 36px;
+
+
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.order {
+  width: 220px;
+  height: 55px;
+  background: #BDAE82;
+  margin: 115px;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 40px;
+
+
+text-align: center;
+
+color: #000000;
+}
+.section-contacts  {
+display: flex;
+justify-content: flex-end;
+  width: 1440px;
+  height: 700px;
+  background: url('./assets/img/contacts.jpg');
+  background-size: auto 700px;
+  background-position: center center;
+} 
+.contacts-container {
+  display: flex;
+ flex-direction:  column ;
+ justify-content: flex-end;
+ width: 450px;
+ height: 445px;
+ gap: 20px;
+}
+input::placeholder {
+  font-family: inherit;
+  color: #bdae82;
+  font-size: 20px;
+}
+textarea {
+resize: none;
+width: 450px;
+height: 100px;
+
+
+}
