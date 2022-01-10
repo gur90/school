@@ -24,10 +24,10 @@
   }
   .nav {
     margin-left: auto;
+    margin-top: 0px;
     
-    border: rgb(182, 192, 35) solid 4px;
     height: 90px;
-    ;
+    
     
   }
   header {
@@ -44,7 +44,7 @@
     flex-direction: row;
   }
   .nav-item {
-    
+    margin-top: 0px;
     text-decoration: none;
     font-family: Inter;
 font-style: normal;
@@ -71,7 +71,7 @@ color: #FFFFFF;
     background: url('bg.jpg');
     background-repeat: no-repeat;
     background-position: center 0;
-    border: springgreen solid;
+    
     
    
   }
@@ -89,7 +89,7 @@ color: #FFFFFF;
     width: 50px;
     height: 50px;
     left: 20px;
-    margin top: 20px;
+    margin-top: 20px;
     transition: 0.3s
   }
   .logo:hover {
@@ -105,6 +105,7 @@ color: #FFFFFF;
 height: 820px;
 left: 0px;
 top: 0px;
+margin-left: -20px;
 border: rgb(10, 9, 9) solid 6px;
     
   }
@@ -135,6 +136,7 @@ border: rgb(10, 9, 9) solid 6px;
     color: #FFFFFF;
   }
   .text {
+    width: 452px;
     font-family: Inter;
 font-style: normal;
 font-weight: normal;
@@ -147,7 +149,8 @@ color: #FFFFFF
   .hero-1 {
     width: 481px;
     height: 330px;
-    margin-top: 229px;
+    margin-top: 140px;
+    margin-left: 101px;
   }
   .hire {
 height: 55px;
@@ -155,6 +158,7 @@ width: 212px;
 left: 0%;
 right: 0%;
 top: 0px;
+margin-top: 25px;
 
 background: #BDAE82;
 border-radius: 0px
@@ -180,24 +184,58 @@ border-radius: 0px
 color: white;
   }
   .lng- {
-    color: white;
+    font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 50px;
+
+
+text-align: center;
+
+color: #FFFFFF;
+    
+    margin-top: 22px;
   }
   .ru {
+    font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 50px;
+
+
+text-align: center;
+
+color: #FFFFFF;
+
     background-color: transparent;
-    color: white;
+   
     border: 0;
     cursor: pointer;
-    font-family: inherit
+    
   }
   .en {
+    font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 50px;
+
+
+text-align: center;
+
+color: #BDAE82;
+
     background-color: transparent;
-    color: #BDAE82;
+    
     border: 0;
     cursor: pointer;
-    font-family: inherit;
+    
     
   }
   .section-title {
+    margin-top: 100px;
     font-family: Merriweather;
 font-style: normal;
 font-weight: bold;
@@ -208,6 +246,7 @@ color: #BDAE82;
  
 }
 .section-title:before, .section-title:after {
+  
   content: " ";
   flex: 1 1;
   border-bottom: 1px solid #BDAE82;
@@ -222,10 +261,29 @@ color: #BDAE82;
  
 }
 .skill-item {
-  border: violet 10px dotted;
+ margin-top: 60px;
   width:320px;
 height: 240px;
 align-items: center;
+}
+.item {
+  font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 40px;
+color: #FFFFFF;
+
+}
+.item2 {
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 36px;
+
+
+text-align: center;
 }
 .cam {
   width: 62px;
@@ -254,6 +312,7 @@ top: 0px
 
 
 h2 {
+  
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
@@ -280,7 +339,8 @@ color: #FFFFFF;
 .btns {
   display: flex;
   justify-content:center;
-  margin: 0 -5px
+  margin: 60px -5px;
+
 }
 .btn {
   width: 220px;
@@ -326,13 +386,14 @@ color: #BDAE82;
    
  }
 .fhoto {
-  margin: 0 5px
+  margin:  5px;
 }
 .video-player {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
 }
 .vid-btn {
   position: absolute;
@@ -343,6 +404,7 @@ color: #BDAE82;
   display: flex;
   justify-content: space-around;
   gap: 25px;
+  margin-top: 60px;
 
   
 }
@@ -366,11 +428,37 @@ text-align: center;
 color: #FFFFFF;
 
 }
+.price1 {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 56px;
+  
+  
+  text-align: center;
+  
+  color: #FFFFFF;
+}
+.price2 {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 48px;
+
+  
+  text-align: center;
+  
+  color: #BDAE82;
+  
+}
 .order {
   width: 220px;
   height: 55px;
   background: #BDAE82;
   margin: 115px;
+  margin-top: 40px;
   font-family: Inter;
 font-style: normal;
 font-weight: normal;
@@ -387,6 +475,8 @@ display: flex;
 justify-content: flex-end;
   width: 1440px;
   height: 700px;
+  margin-top: 100px;
+  margin-left: -20px;
   background: url('./assets/img/contacts.jpg');
   background-size: auto 700px;
   background-position: center center;
@@ -395,19 +485,111 @@ justify-content: flex-end;
   display: flex;
  flex-direction:  column ;
  justify-content: flex-end;
+ margin: 60px 20px;
  width: 450px;
  height: 445px;
  gap: 20px;
+ 
 }
-input::placeholder {
+.input {
+  width: 100%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    border: 3px solid #bdae82;
+    outline: none;
+    font-size: 20px;
+    line-height: 40px;
+    color: #FFFFFF;
+    background: transparent;
+}
+.input::placeholder {
   font-family: inherit;
   color: #bdae82;
   font-size: 20px;
 }
-textarea {
+.text-ar {
 resize: none;
 width: 450px;
 height: 100px;
 
 
+border: 3px solid #bdae82;
+background: transparent;
+}
+.text-ar::placeholder {
+  font-family: inherit;
+  color: #bdae82;
+  font-size: 20px;
+}
+.order1 {
+  width: 220px;
+  height: 55px;
+  background: #BDAE82;
+  margin: 0 ;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 40px;
+}
+.year {
+  color: white;
+}
+a {
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 50px;
+
+
+
+color: #FFFFFF;
+  
+}
+.f {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+.ico4 {
+  margin-right: 20px;
+  width: 32px;
+height: 32px;
+}
+.year {
+  margin-right: 20px;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 50px;
+
+}
+.c {
+  margin-right: 20px;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 50px;
+
+}
+.c-c {
+  margin-bottom: 40px;
+  font-family: Merriweather;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 80px;
+text-align: left;
+
+
+
+color: #BDAE82;
+}
+.footer {
+  height: 150px;
 }
