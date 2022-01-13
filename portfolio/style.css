@@ -1,0 +1,652 @@
+@font-face {
+  font-family:Merriweather ;
+   src: url("assets/fonts/Merriweather/Merriweather-Bold.ttf");
+ }
+ @font-face {
+  font-family: Inter ;
+   src: url("assets/fonts/Inter/static/Inter-Bold.ttf");
+ }
+ @font-face {
+  font-family: Inter ;
+  src: url("assets/fonts/Inter/static/Inter-Regular.ttf");
+ }
+ html {
+  scroll-behavior: smooth; 
+}
+ body {
+   background-color: black;
+   width: 1440;
+   margin: 0;
+   
+ }
+ * {
+   box-sizing: border-box;
+ }
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+   
+    
+  }
+  .nav {
+    margin-left: auto;
+    margin-top: 0px;
+    
+    height: 90px;
+    
+    
+  }
+  header {
+    
+    
+    display: flex;
+    
+    justify-content: space-between;
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-item {
+    margin-top: 0px;
+    text-decoration: none;
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 50px;
+color: #FFFFFF;
+transition: 3s;
+  }
+  .nav-item:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  }
+  .nav-link {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: #FFFFFF
+  }
+  .header-container {
+    height: 90px;
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    
+    
+   
+  }
+  a {
+   text-decoration: none; 
+   font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 50px;
+
+
+
+color: #FFFFFF;
+  }
+  .nav-list {
+    list-style: none;
+    
+  
+    margin:20px 90px 840px; 850px;
+  }
+  .logo {
+   
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    margin-top: 20px;
+    transition: 0.3s
+  }
+  .logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  }
+  .hero-container {
+   
+    background-image: url('bg.jpg');
+    background-position: center -90px;
+    background-repeat: no-repeat;
+    width: 100%;
+height: 820px;
+left: 0px;
+top: 0px;
+margin-left: -20px;
+border: rgb(10, 9, 9) solid 0.01px;
+    
+  }
+  .header-1 {
+    
+    display: flex ;
+    justify-content: space-between;
+    flex-direction: row;
+  
+    align-self: baseline;
+     
+  }
+  .lng {
+    background-color: none;
+    margin-top: 20px;
+   
+  }
+  main {
+    padding-top: 0;
+    
+  }
+  h1 {
+    margin-bottom: 10px;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120px;
+    color: #FFFFFF;
+  }
+  .text {
+    margin-top: 0px;
+    width: 452px;
+    font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 40px;
+color: #FFFFFF
+
+
+  }
+  .hero-1 {
+    width: 481px;
+    height: 330px;
+    margin-top: 129px;
+    margin-left: 99px;
+  }
+  .hire {
+height: 55px;
+width: 212px;
+left: 0%;
+right: 0%;
+top: 0px;
+margin-top: 25px;
+
+background: #BDAE82;
+border-radius: 0px
+
+  }
+  .hire-me {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    
+    
+    text-align: center;
+    
+    color: #000000;
+  }
+  li {
+    margin: 15px;
+   text-decoration: none;
+  }
+  .lng {
+color: white;
+  }
+  .lng- {
+    font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 50px;
+
+
+text-align: center;
+
+color: #FFFFFF;
+    
+    margin-top: 22px;
+  }
+  .ru {
+    font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 50px;
+
+
+text-align: center;
+
+color: #FFFFFF;
+
+    background-color: transparent;
+   
+    border: 0;
+    cursor: pointer;
+    
+  }
+  .en {
+   margin-left: -85px;
+    font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 50px;
+
+
+text-align: center;
+
+color: #BDAE82;
+
+    background-color: transparent;
+    
+    border: 0;
+    cursor: pointer;
+    
+    
+  }
+  .section-title {
+    margin-top: 100px;
+    font-family: Merriweather;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 80px;
+color: #BDAE82;
+  display: flex;
+ 
+}
+.section-title:before, .section-title:after {
+  
+  content: " ";
+  flex: 1 1;
+  border-bottom: 1px solid #BDAE82;
+  margin: auto;
+  align: center;
+}
+h2 {
+  margin: 0 auto;
+  width: 50%;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  
+  
+  text-align: center;
+  
+  color: #FFFFFF
+}
+.skill-items {
+  display:flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
+ 
+}
+.skill-item {
+ margin-top: 55px;
+  width:315px;
+height: 240px;
+align-items: center;
+}
+.item {
+  margin-top: 45px;
+  font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 40px;
+color: #FFFFFF;
+
+}
+.item2 {
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 36px;
+color: white;
+
+text-align: center;
+}
+.cam {
+  width: 62px;
+height: 50px;
+margin-left: 129px;
+top: 0px;
+}
+.vid {
+  width: 62px;
+height: 50px;
+margin-left: 129px;
+top: 0px;
+}
+.img1 {
+  width: 62px;
+height: 50px;
+margin-left: 129px;
+top: 0px
+}
+.mic1 {
+  width: 62px;
+height: 50px;
+margin-left: 129px;
+top: 0px
+}
+
+
+
+h3 {
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 36px;
+
+
+text-align: center;
+
+color: #FFFFFF;
+}
+.btns {
+  display: flex;
+  justify-content:center;
+  margin: 60px -5px;
+
+}
+.btn {
+  width: 220px;
+height: 55px;
+border: #BDAE82 solid 2px;
+background-color: black;
+margin: 0 5px
+}
+.btn1 {
+  width: 220px;
+  height: 55px;
+  border: #BDAE82 solid 2px;
+  background-color: #BDAE82 ;
+}
+.season {
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 40px;
+
+
+text-align: center;
+
+color: #BDAE82;
+}
+ .season1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  
+  
+  text-align: center;
+  
+  color: #000000;
+  
+ }
+ .imgs {
+   margin-top: 60px;
+   margin: 60 -5px
+   
+ }
+.fhoto {
+  margin:  5px;
+}
+.video-player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.vid-btn {
+  position: absolute;
+  width: 129,86px;
+  height: 130px;
+}
+.price-items {
+  display: flex;
+  justify-content: space-around;
+  gap: 25px;
+  margin-top: 60px;
+
+  
+}
+.price-item {
+
+  width: 450px;
+  height: 505px;
+  border: 3px solid #BDAE82;
+}
+.pr-it {
+  display: block;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 36px;
+
+
+text-align: center;
+
+color: #FFFFFF;
+
+}
+.price1 {
+  margin-top: 36px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 56px;
+  
+  
+  text-align: center;
+  
+  color: #FFFFFF;
+}
+.price2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 48px;
+
+  
+  text-align: center;
+  
+  color: #BDAE82;
+  
+}
+.order {
+  width: 220px;
+  height: 55px;
+  background: #BDAE82;
+  margin: 115px;
+  margin-top: 40px;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 40px;
+
+
+text-align: center;
+
+color: #000000;
+}
+.section-contacts  {
+display: flex;
+justify-content: flex-end;
+  width: 1440px;
+  height: 700px;
+  margin-top: 100px;
+  margin-left: -20px;
+  background: url('./assets/img/contacts.jpg');
+  background-size: auto 700px;
+  background-position: center center;
+} 
+.contacts-container {
+  display: flex;
+ flex-direction:  column ;
+ justify-content: flex-end;
+ margin: 60px 20px;
+ width: 450px;
+ height: 445px;
+ gap: 20px;
+ 
+}
+.input {
+  width: 100%;
+    padding: 0 20px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    border: 3px solid #bdae82;
+    outline: none;
+    font-size: 20px;
+    line-height: 40px;
+    color: #FFFFFF;
+    background: transparent;
+}
+.input::placeholder {
+  font-family: inherit;
+  color: #bdae82;
+  font-size: 20px;
+}
+.text-ar {
+resize: none;
+width: 450px;
+height: 100px;
+
+
+border: 3px solid #bdae82;
+background: transparent;
+}
+.text-ar::placeholder {
+  font-family: inherit;
+  color: #bdae82;
+  font-size: 20px;
+}
+.order1 {
+  width: 220px;
+  height: 55px;
+  background: #BDAE82;
+  margin-top: 0 ;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 40px;
+color: black;
+}
+
+.year {
+  color: white;
+}
+a {
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 50px;
+
+
+
+color: #FFFFFF;
+  
+}
+.f {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+.ico4 {
+  margin-right: 20px;
+  width: 32px;
+height: 32px;
+}
+.year {
+  margin-right: 20px;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 50px;
+
+}
+.c {
+  margin-right: 20px;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 50px;
+
+}
+.c-c {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  font-family: Merriweather;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 80px;
+text-align: left;
+
+
+
+color: #BDAE82;
+}
+.footer {
+  height: 150px;
+}
+.two {
+  margin-right: 0px;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 50px;
+
+
+
+color: #FFFFFF;
+}
+.three {
+margin-right: -20px;
+}
+.soc-list {
+  display: inline;
+  padding: 0px;
+  margin: 0px 0px;
+  line-height: 2px;
+  transition: 5s;
+}
+.soc-list:hover {
+  color: #bdae82;
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
