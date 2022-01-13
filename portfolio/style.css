@@ -4,8 +4,15 @@
  }
  @font-face {
   font-family: Inter ;
-   src: url("assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf");
+   src: url("assets/fonts/Inter/static/Inter-Bold.ttf");
  }
+ @font-face {
+  font-family: Inter ;
+  src: url("assets/fonts/Inter/static/Inter-Regular.ttf");
+ }
+ html {
+  scroll-behavior: smooth; 
+}
  body {
    background-color: black;
    width: 1440;
@@ -19,7 +26,7 @@
     width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
-    border: tomato solid;
+   
     
   }
   .nav {
@@ -51,12 +58,12 @@ font-style: normal;
 font-weight: normal;
 font-size: 20px;
 line-height: 50px;
-
-
-
 color: #FFFFFF;
-   
-
+transition: 3s;
+  }
+  .nav-item:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
   }
   .nav-link {
     font-family: Inter;
@@ -77,6 +84,15 @@ color: #FFFFFF;
   }
   a {
    text-decoration: none; 
+   font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 50px;
+
+
+
+color: #FFFFFF;
   }
   .nav-list {
     list-style: none;
@@ -106,7 +122,7 @@ height: 820px;
 left: 0px;
 top: 0px;
 margin-left: -20px;
-border: rgb(10, 9, 9) solid 6px;
+border: rgb(10, 9, 9) solid 0.01px;
     
   }
   .header-1 {
@@ -128,6 +144,7 @@ border: rgb(10, 9, 9) solid 6px;
     
   }
   h1 {
+    margin-bottom: 10px;
     font-family: Merriweather;
     font-style: normal;
     font-weight: bold;
@@ -136,6 +153,7 @@ border: rgb(10, 9, 9) solid 6px;
     color: #FFFFFF;
   }
   .text {
+    margin-top: 0px;
     width: 452px;
     font-family: Inter;
 font-style: normal;
@@ -149,8 +167,8 @@ color: #FFFFFF
   .hero-1 {
     width: 481px;
     height: 330px;
-    margin-top: 140px;
-    margin-left: 101px;
+    margin-top: 129px;
+    margin-left: 99px;
   }
   .hire {
 height: 55px;
@@ -216,6 +234,7 @@ color: #FFFFFF;
     
   }
   .en {
+   margin-left: -85px;
     font-family: Inter;
 font-style: normal;
 font-weight: bold;
@@ -251,6 +270,21 @@ color: #BDAE82;
   flex: 1 1;
   border-bottom: 1px solid #BDAE82;
   margin: auto;
+  align: center;
+}
+h2 {
+  margin: 0 auto;
+  width: 50%;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  
+  
+  text-align: center;
+  
+  color: #FFFFFF
 }
 .skill-items {
   display:flex;
@@ -261,12 +295,13 @@ color: #BDAE82;
  
 }
 .skill-item {
- margin-top: 60px;
-  width:320px;
+ margin-top: 55px;
+  width:315px;
 height: 240px;
 align-items: center;
 }
 .item {
+  margin-top: 45px;
   font-family: Inter;
 font-style: normal;
 font-weight: bold;
@@ -281,7 +316,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 36px;
-
+color: white;
 
 text-align: center;
 }
@@ -311,19 +346,7 @@ top: 0px
 }
 
 
-h2 {
-  
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 40px;
-  
-  
-  text-align: center;
-  
-  color: #FFFFFF
-}
+
 h3 {
   font-family: Inter;
 font-style: normal;
@@ -429,6 +452,7 @@ color: #FFFFFF;
 
 }
 .price1 {
+  margin-top: 36px;
   font-family: Merriweather;
   font-style: normal;
   font-weight: bold;
@@ -441,6 +465,8 @@ color: #FFFFFF;
   color: #FFFFFF;
 }
 .price2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-family: Merriweather;
   font-style: normal;
   font-weight: bold;
@@ -494,7 +520,8 @@ justify-content: flex-end;
 .input {
   width: 100%;
     padding: 0 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    margin-top: 15px;
     border: 3px solid #bdae82;
     outline: none;
     font-size: 20px;
@@ -525,13 +552,15 @@ background: transparent;
   width: 220px;
   height: 55px;
   background: #BDAE82;
-  margin: 0 ;
+  margin-top: 0 ;
   font-family: Inter;
 font-style: normal;
 font-weight: normal;
 font-size: 20px;
 line-height: 40px;
+color: black;
 }
+
 .year {
   color: white;
 }
@@ -578,7 +607,8 @@ line-height: 50px;
 
 }
 .c-c {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
+  margin-top: 5px;
   font-family: Merriweather;
 font-style: normal;
 font-weight: bold;
@@ -592,4 +622,31 @@ color: #BDAE82;
 }
 .footer {
   height: 150px;
+}
+.two {
+  margin-right: 0px;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 50px;
+
+
+
+color: #FFFFFF;
+}
+.three {
+margin-right: -20px;
+}
+.soc-list {
+  display: inline;
+  padding: 0px;
+  margin: 0px 0px;
+  line-height: 2px;
+  transition: 5s;
+}
+.soc-list:hover {
+  color: #bdae82;
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
 }
