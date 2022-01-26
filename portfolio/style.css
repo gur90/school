@@ -378,18 +378,34 @@ color: #FFFFFF;
 
 }
 .btn {
+  color:white;
+  font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 40px;
   width: 220px;
 height: 55px;
 border: #BDAE82 solid 2px;
 background-color: black;
-margin: 0 5px
+margin: 0 5px;
+cursor: pointer;
 }
-.btn1 {
+.btn.active {
+  width: 220px;
+height: 55px;
+border: #BDAE82 solid 2px;
+background-color: black;
+margin: 0 5px;
+color: black;
+}
+.btn.active {
   width: 220px;
   height: 55px;
   border: #BDAE82 solid 2px;
   background-color: #BDAE82 ;
 }
+
 .season {
   font-family: Inter;
 font-style: normal;
@@ -408,6 +424,10 @@ transition: 3s;
   color: white;
   cursor: pointer;
 }
+.season.active {
+  color: black;
+  cursor: pointer;
+}
  .season1 {
   font-family: Inter;
   font-style: normal;
@@ -421,10 +441,11 @@ transition: 3s;
   color: #000000;
   
  }
- .imgs {
+ .imgs {display: flex;
+  flex-wrap: wrap;
    margin-top: 60px;
-   margin: 60 -5px
-  
+   margin: 60 -5px;
+  gap:25px;
    
  }
 .fhoto {
@@ -452,6 +473,7 @@ transition: 3s;
   position: absolute;
   margin: 288px 636px;
  
+
   border: transparent;
   transition: 3s;
 }
@@ -1057,8 +1079,8 @@ transform: translate(-50%, -50%);
   width: 450px;
   height: 560px;
   margin: 0 auto ;
-  padding:0 0 0 0;
   
+ 
 }
 .section-title {
   margin-top: 80px;
