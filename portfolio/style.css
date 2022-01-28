@@ -19,17 +19,18 @@
    background-color: black;
    max-width: 1440px;
    margin: 0 auto;
-  
+  overflow-x: hidden;
 
  }
 
  * {
    box-sizing: border-box;
  }
+ 
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 20px; 
+    padding: 0 0; 
 
   }
   .nav {
@@ -100,13 +101,47 @@ color: #FFFFFF;
     list-style: none;
     margin:20px 90px 840px;
   }
+  .theme-bt {
+    background-image: url("./assets/svg/Vector.svg");
+    z-index: 5;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    transition: 3s;
+  }
+  .theme-bt:hover {
+    border:1px solid #BDAE82;
+  }
+  .theme-bt.active {
+    background-image: url("./assets/svg/carbon_sun.svg");
+    z-index: 5;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    transition: 3s;
+  }
+  .light-theme-bt:hover {
+    border:1px solid #BDAE82;
+  }
+  .light-theme-class {
+    background-color: white;
+    color: black
+  }
+  /*.light-theme-class:hover {
+    color:black;
+  }*/
   .logo {
    
     width: 50px;
     height: 50px;
     left: 20px;
     margin-top: 20px;
-    transition: 0.3s
+    transition: 0.3s;
+    cursor: pointer;
   }
   .logo:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
@@ -117,10 +152,13 @@ color: #FFFFFF;
     background-position: center -90px;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
    max-width: 1440px;
 height: 910px;
-left: 0px;
+/*left: 0px;*/
 position: relative;
 padding-top: 160px;
   /*border: black solid 1px;*/ 
@@ -315,10 +353,19 @@ color: #BDAE82;
   margin: auto;
   align: center;
 }
+.section-title.light-theme-class {
+  color:black
+}
+.section-title.light-theme-class:before {
+  border-bottom: 1px solid black;
+}
+.section-title.light-theme-class:after {
+  border-bottom: 1px solid black;
+}
 h2 {
   margin: 0 auto;
-  width: 364px;
-  font-family: Inter;
+  width: 700px;
+  font-family: Merriweather;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -329,6 +376,7 @@ h2 {
   
   color: #FFFFFF
 }
+
 .skill-items {
   display:flex;
   justify-content:space-between;
@@ -353,6 +401,9 @@ line-height: 40px;
 color: #FFFFFF;
 
 }
+.item.light-theme-class {
+  color:black
+}
 .item2 {
   font-family: Inter;
 font-style: normal;
@@ -362,6 +413,9 @@ line-height: 36px;
 color: white;
 
 text-align: center;
+}
+.item2.light-theme-class {
+  color:black
 }
 .cam {
   width: 62px;
@@ -421,6 +475,16 @@ border: #BDAE82 solid 2px;
 background-color: black;
 margin: 0 5px;
 cursor: pointer;
+}
+.btn.light-theme-class {
+  background-color: white;
+  color: #BDAE82;
+
+}
+.btn.light-theme-class:hover {
+  
+  color: black;
+
 }
 .btn.active {
   width: 220px;
@@ -541,6 +605,9 @@ text-align: center;
 color: #FFFFFF;
 
 }
+.pr-it.light-theme-class {
+  color:black
+}
 .price1 {
   margin-top: 36px;
   font-family: Merriweather;
@@ -553,6 +620,9 @@ color: #FFFFFF;
   text-align: center;
   
   color: #FFFFFF;
+}
+.price1.light-theme-class {
+  color:black
 }
 .price2 {
   margin-top: 10px;
@@ -597,7 +667,7 @@ justify-content: flex-end;
   width: 1440px;
   height: 700px;
   margin-top: 100px;
-  margin-left: -20px;
+  /*margin-left: -20px;*/
   background: url('./assets/img/contacts.jpg');
   background-size: auto 700px;
   background-position: center center;
@@ -1135,6 +1205,11 @@ border-bottom: 1px solid #BDAE82;
 margin: auto;
 align: center;
 }
+h2 {
+  width: 364px;
+  font-size: 32px;
+line-height: 40px;
+}
 .switch-lng {
   margin-left: auto;
 }
@@ -1453,6 +1528,7 @@ margin-left: 10px;
  background-color: black;
  overflow-x: hidden;
  transition-duration: 1s;
+ z-index: 0;
 }
 .nav.active {
  right: 0;
@@ -1601,6 +1677,7 @@ margin-left: 10px;
  background-color: black;
  overflow-x: hidden;
  transition-duration: 1s;
+ z-index: 0;
 }
 .nav.active {
  right: 0;
@@ -1645,5 +1722,16 @@ margin-top: 134px;
 .btns {
   width: 300px; 
 }
-
+.price-item {
+  width: 300px;
+}
+.order {
+  margin: 0 auto;
+}
+.contacts-container {
+  
+ margin: 60px 20px;
+ width: 300px;
+ height: 445px;
+ gap: 20px;
 }

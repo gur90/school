@@ -224,3 +224,21 @@ event.target.classList.add('active');
   
 }
 enButton.forEach(el => {el.addEventListener('click', changeEnLng)});
+
+//change theme
+const theme = document.querySelector('.theme-bt');
+
+let clasStyle = document.querySelectorAll(['main', '.section-title', '.section-title:before', '.section-title:after', '.skill-items', '.skill-item', '.item', '.item2', '.price-items', '.price-item', '.pr-it', '.price1', '.btn']);
+
+theme.addEventListener('click', changeTheme, changeIcon );
+
+
+
+function changeTheme() {
+clasStyle.forEach((el) => el.classList.toggle('light-theme-class'));
+  
+    
+}
+function changeIcon(theme) {
+    theme.event.target.classList.add('active')
+}
