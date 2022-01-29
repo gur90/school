@@ -547,11 +547,17 @@ transition: 3s;
   margin:  5px;
 }
 .video-player {
+  
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+  background-image: url("./assets/img/video-player.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1400px;
+  height: 705px;
 }
 .vid-btn {
   position: absolute;
@@ -1126,9 +1132,7 @@ line-height: 22px;
   width: 768px;
   height: 418px;
   margin-top: 65px;
- 
-  
- 
+background-image: url("./assets/img/video-player\(1\).jpg");
   overflow-x: hidden;
 }
 .vid-pl {

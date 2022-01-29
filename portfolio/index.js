@@ -41,6 +41,9 @@ const i18Obj = {
       'standart': 'Standart',
       'premium': 'Premium',
       'gold': 'Gold',
+      'price500': '500 $',
+      'price700': '700 $',
+      'price1000': '1000 $'
     },
     'ru': {
       'skills': 'Навыки',
@@ -83,7 +86,11 @@ const i18Obj = {
       'send-message': 'Отправить',
       'standart': 'Стандартный',
       'premium': 'Премиальный',
-      'gold': 'Золотой'
+      'gold': 'Золотой',
+      'price500': '38500 руб',
+      'price700': '53900 руб',
+      'price1000': '77000 руб',
+      'e-mail': 'почта'
     }
   }
  
@@ -188,6 +195,7 @@ function getTranslate(language) {
         el.textContent = i18Obj[language][el.dataset.i18];
        
     })
+    
 }
 elementButtonRu.addEventListener("click", ( ) => { getTranslate('ru')});
 
@@ -226,19 +234,50 @@ event.target.classList.add('active');
 enButton.forEach(el => {el.addEventListener('click', changeEnLng)});
 
 //change theme
+
 const theme = document.querySelector('.theme-bt');
 
 let clasStyle = document.querySelectorAll(['main', '.section-title', '.section-title:before', '.section-title:after', '.skill-items', '.skill-item', '.item', '.item2', '.price-items', '.price-item', '.pr-it', '.price1', '.btn']);
 
-theme.addEventListener('click', changeTheme, changeIcon );
+theme.addEventListener('click', changeTheme);
 
 
 
 function changeTheme() {
 clasStyle.forEach((el) => el.classList.toggle('light-theme-class'));
+}
+//change theme button
   
+const vectorSun = document.querySelector('.vector-sun');  
+
+
+function changeIcon(event) {
+    theme.addEventListener('click', () => {
+        theme.classList.remove('active')
+    });
+    event.target.classList.add('active');
     
 }
-function changeIcon(theme) {
-    theme.event.target.classList.add('active')
-}
+theme.addEventListener('click', changeIcon);
+
+
+
+//local storage
+
+let langl = 'en';
+let themel = 'light';
+
+function setLocalStorage() {
+    localStorage.setItem('langl', ru);
+    localStorage.setItem('themel', dark);
+  }
+  window.addEventListener('beforeunload', setLocalStorage);
+
+
+  function getLocalStorage() {
+    if(localStorage.getItem('langl')) {
+      const langl = localStorage.getItem('langl');
+      getTranslate(langl);
+    }
+  }
+  window.addEventListener('load', getLocalStorage)
