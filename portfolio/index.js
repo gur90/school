@@ -44,6 +44,7 @@ const i18Obj = {
       'price500': '500 $',
       'price700': '700 $',
       'price1000': '1000 $'
+      
     },
     'ru': {
       'skills': 'Навыки',
@@ -90,13 +91,13 @@ const i18Obj = {
       'price500': '38500 руб',
       'price700': '53900 руб',
       'price1000': '77000 руб',
-      'e-mail': 'почта'
+      
     }
   }
  
-console.log("часть 1. \n 1.Вёрстка валидная  +10 \n 2. Вёрстка семантическая +20 \n 3. Вёрстка соответствует макету  но есть отклонения по пикселям, особенно в части footer +42 \n 4. Требования к css + 12 \n 5. Интерактивность, реализуемая через css +20 \n Итого: 104 баллa") 
+console.log("часть 1. \n 1.Вёрстка валидная  +10 \n 2. Вёрстка семантическая +20 \n 3. Вёрстка соответствует макету  но есть отклонения по пикселям, особенно в части footer +42 \n 4. Требования к css + 12 \n 5. Интерактивность, реализуемая через css +20 \n Итого: 104 баллa"); 
 console.log("часть 2 \n Ваша отметка - 67 балла(ов) \n Отзыв по пунктам ТЗ: \n Частично выполненные пункты: \n 1) блок header — 3 балл(а) \n 2) секция hero — 3 балл(а) \n 3) секция skills — 3 балл(а) \n 4) секция portfolio — 3 балл(а) \n 5) секция price — 3 балл(а) \n 6) блок footer — 3 балл(а) \n Все оставшиеся пункты выполнены и не имеют комментариев проверяющего.");
-
+console.log("часть 3. \n Ваша отметка - 75 балла(ов) \n Не выполненные/не засчитанные пункты: \n 1) выбранный пользователем язык отображения страницы и светлая или тёмная тема сохраняются при перезагрузке страницы \n 2) сложные эффекты для кнопок при наведении и/или клике");
 
 
 const hamburger = document.querySelector('.hamburger');
@@ -206,8 +207,8 @@ function getTranslate(language) {
     lang.forEach((el) => {
         
         el.textContent = i18Obj[language][el.dataset.i18];
-       
-    })
+    });
+  
 }
 elementButtonEn.addEventListener("click", ( ) => { getTranslate('en')});
 
@@ -251,15 +252,14 @@ clasStyle.forEach((el) => el.classList.toggle('light-theme-class'));
 const vectorSun = document.querySelector('.vector-sun');  
 
 
-function changeIcon(event) {
-    theme.addEventListener('click', () => {
-        theme.classList.remove('active')
-    });
-    event.target.classList.add('active');
-    
+function changeIcon() {
+        theme.classList.toggle('active');
 }
 theme.addEventListener('click', changeIcon);
-
+/*function changeIconClose() {
+    theme.classList.remove('active');
+}
+theme.addEventListener('click', changeIconClose);*/
 
 
 //local storage
