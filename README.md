@@ -1,2 +1,2 @@
-# gur90-JSFEPRESCHOOL
-Private repository for @gur90
+# eco-sounds
+https://github.com/rolling-scopes-school/tasks/blob/master/tasks/js30%23/js30-1.md
