@@ -91,7 +91,8 @@ const i18Obj = {
       'price500': '38500 руб',
       'price700': '53900 руб',
       'price1000': '77000 руб',
-      
+      'email': 'почта',
+      'phone': 'телефон'
     }
   }
  
@@ -190,15 +191,14 @@ portfolioBtns.forEach(el => {el.addEventListener('click', changeClassActive)});
 elementButtonRu = document.querySelector('.ru')
 function getTranslate(language) {
    var lang = document.querySelectorAll('[data-i18]');
-  
+   
     lang.forEach((el) => {
         
         el.textContent = i18Obj[language][el.dataset.i18];
        
-    })
-    
+    })  
 }
-elementButtonRu.addEventListener("click", ( ) => { getTranslate('ru')});
+elementButtonRu.addEventListener("click", ( ) => { getTranslate('ru')} );
 
 elementButtonEn = document.querySelector('.en')
 function getTranslate(language) {
@@ -208,9 +208,12 @@ function getTranslate(language) {
         
         el.textContent = i18Obj[language][el.dataset.i18];
     });
-  
 }
-elementButtonEn.addEventListener("click", ( ) => { getTranslate('en')});
+elementButtonEn.addEventListener("click", ( ) => { getTranslate('en')} );
+
+//placeholder
+
+
 
 // color
 const ruButton = document.querySelectorAll('.ru');
@@ -219,9 +222,8 @@ function changeRuLng(event) {
     ruButton.forEach(el => {el.classList.remove('active')});
     enButton.forEach(el => {el.classList.remove('active')});
 event.target.classList.add('active');
-
-  
 }
+
 ruButton.forEach(el => {el.addEventListener('click', changeRuLng)});
 
 
@@ -242,42 +244,17 @@ let clasStyle = document.querySelectorAll(['main', '.section-title', '.section-t
 
 theme.addEventListener('click', changeTheme);
 
-
-
 function changeTheme() {
 clasStyle.forEach((el) => el.classList.toggle('light-theme-class'));
 }
 //change theme button
   
 const vectorSun = document.querySelector('.vector-sun');  
-
-
 function changeIcon() {
         theme.classList.toggle('active');
 }
 theme.addEventListener('click', changeIcon);
-/*function changeIconClose() {
-    theme.classList.remove('active');
-}
-theme.addEventListener('click', changeIconClose);*/
-
 
 //local storage
-
-let langl = 'en';
-let themel = 'light';
-
-function setLocalStorage() {
-    localStorage.setItem('langl', ru);
-    localStorage.setItem('themel', dark);
-  }
-  window.addEventListener('beforeunload', setLocalStorage);
-
-
-  function getLocalStorage() {
-    if(localStorage.getItem('langl')) {
-      const langl = localStorage.getItem('langl');
-      getTranslate(langl);
-    }
-  }
-  window.addEventListener('load', getLocalStorage)
+let currentTheme = 'light' 
+localStorage.setItem('currentTheme', currentTheme)
