@@ -159,8 +159,9 @@ body {
    margin: 0 20px
    
 }
-.a {
-    color:white
+a {
+    color:white;
+    text-decoration: none;
 }
 .gh {
     color: #fff;

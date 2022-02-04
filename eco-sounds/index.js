@@ -78,7 +78,7 @@ function playAudioLogoButton() {
   audio.currentTime = 0;
   audio.play();
   changePlayPause(); 
-  isPlay = true;
+  
 }
 logoButton.addEventListener('click', () => playAudioLogoButton() )
 
@@ -138,11 +138,11 @@ function playAudioDr() {
   }
   logoButton.addEventListener('click', () => playAudioLogo() )
   
-function pauseAudio() {
+/*function pauseAudio() {
     audio.pause();
     isPlay = false;
     changePausePlay();
-  }
+  }*/
   button.addEventListener('çlick', () => pauseAudio())
 // change playbut 
 function changePlayPause() {
