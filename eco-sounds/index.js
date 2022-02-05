@@ -16,6 +16,7 @@ function myClickSol (){
   Img.classList.remove('bg-mal');
   Img.classList.remove('bg-zhav');
   Img.classList.remove('bg-slav');
+  Img.classList.remove('bg-forest');
   Img.classList.add('bg-sol');
 }
 /*solButton.addEventListener('click',  myClickSol )*/
@@ -26,6 +27,7 @@ function myClickDr (){
   Img.classList.remove('bg-mal');
   Img.classList.remove('bg-zhav');
   Img.classList.remove('bg-slav');
+  Img.classList.remove('bg-forest');
   Img.classList.add('bg-dr');
 }
 /*drButton.addEventListener('click',  myClickDr);*/
@@ -36,6 +38,7 @@ function myClickMal (){
   Img.classList.remove('bg-mal');
   Img.classList.remove('bg-zhav');
   Img.classList.remove('bg-slav');
+  Img.classList.remove('bg-forest');
   Img.classList.add('bg-mal');
 }
 /*malButton.addEventListener('click',  myClickMal);*/
@@ -46,6 +49,7 @@ function myClickZhav (){
   Img.classList.remove('bg-mal');
   Img.classList.remove('bg-zhav');
   Img.classList.remove('bg-slav');
+  Img.classList.remove('bg-forest');
   Img.classList.add('bg-zhav');
 }
 /*zhavButton.addEventListener('click',  myClickZhav);*/
@@ -56,6 +60,7 @@ function myClickSlav (){
   Img.classList.remove('bg-mal');
   Img.classList.remove('bg-zhav');
   Img.classList.remove('bg-slav');
+  Img.classList.remove('bg-forest');
   Img.classList.add('bg-slav');
 }
 /*slavButton.addEventListener('click',  myClickSlav);*/
@@ -71,16 +76,41 @@ function myClickLogoButton (){
 /*logoButton.addEventListener('click', myClickLogoButton);*/
 
 //audio
-const audio = new Audio();
 
-function playAudioLogoButton() {
+const audio = new Audio();
+var playPromise = audio.play();
+if (playPromise !== undefined) {
+  playPromise.then(_ => {
+   
+  })
+  .catch(error => {
+  });
+}
+function playPause() {
+  if( isPlay) {
+    changePlayPause();
+    audio.pause();
+    
+  } else {
+    changePausePlay();
+    audio.play();
+   
+  }
+  isPlay = !isPlay;
+}
+button.addEventListener('click', playPause);
+
+
+
+/*function playAudioLogoButton() {
   audio.src = "./assets/audio/forest.mp3"
   audio.currentTime = 0;
   audio.play();
+  myClickLogoButton;
   changePlayPause(); 
-  
+  playPause
 }
-logoButton.addEventListener('click', () => playAudioLogoButton() )
+logoButton.addEventListener('click', () => playAudioLogoButton() )*/
 
 
 
@@ -88,8 +118,9 @@ function playAudioSol() {
   audio.src = "./assets/audio/solovey.mp3"
   audio.currentTime = 0;
   audio.play();
-  myClickSol()
-  changePlayPause(); 
+  myClickSol();
+  changePlayPause();  
+ 
 }
 solButton.addEventListener('click', () => playAudioSol() )
 
@@ -138,22 +169,32 @@ function playAudioDr() {
   }
   logoButton.addEventListener('click', () => playAudioLogo() )
   
-/*function pauseAudio() {
-    audio.pause();
-    isPlay = false;
-    changePausePlay();
-  }*/
-  button.addEventListener('çlick', () => pauseAudio())
+  /*function playAudioPlay() {
+    audio.src = "./assets/audio/forest.mp3"
+    audio.currentTime = 0;
+    audio.play();
+    myClickLogoButton();
+    changePlayPause(); 
+  }
+  button.addEventListener('click', () =>  playAudioPlay() )*/
+  
+
 // change playbut 
+
 function changePlayPause() {
-button.classList.add('pause');
+  
+    button.classList.add('pause')
+  
 }
-button.addEventListener('click',changePlayPause );
+button.addEventListener('click', changePlayPause );
 
 function changePausePlay() {
-    button.classList.remove('pause');
+  if (button.classList.contains('pause')) {
+    button.classList.remove('pause')
+  }
+    
 }
-button.addEventListener('click',changePausePlay);
+button.addEventListener('click', changePausePlay);
   //change color button
 const navItem = document.querySelectorAll('.nav-item');
 function changeColorButton (event) {
