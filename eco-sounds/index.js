@@ -81,36 +81,22 @@ const audio = new Audio();
 var playPromise = audio.play();
 if (playPromise !== undefined) {
   playPromise.then(_ => {
-   
   })
   .catch(error => {
   });
 }
 function playPause() {
   if( isPlay) {
-    changePlayPause();
     audio.pause();
+    button.classList.remove('pause')
     
   } else {
-    changePausePlay();
     audio.play();
-   
+    button.classList.add('pause')
   }
   isPlay = !isPlay;
 }
-button.addEventListener('click', playPause);
-
-
-
-/*function playAudioLogoButton() {
-  audio.src = "./assets/audio/forest.mp3"
-  audio.currentTime = 0;
-  audio.play();
-  myClickLogoButton;
-  changePlayPause(); 
-  playPause
-}
-logoButton.addEventListener('click', () => playAudioLogoButton() )*/
+button.addEventListener('click', () => playPause ());
 
 
 
@@ -119,7 +105,7 @@ function playAudioSol() {
   audio.currentTime = 0;
   audio.play();
   myClickSol();
-  changePlayPause();  
+  playPause();
  
 }
 solButton.addEventListener('click', () => playAudioSol() )
@@ -129,7 +115,7 @@ function playAudioDr() {
     audio.currentTime = 0;
     audio.play();
     myClickDr();
-    changePlayPause(); 
+    playPause(); 
   }
   drButton.addEventListener('click', () => playAudioDr() )
   
@@ -138,7 +124,7 @@ function playAudioDr() {
     audio.currentTime = 0;
     audio.play();
     myClickMal();
-    changePlayPause(); 
+    playPause(); 
   }
   malButton.addEventListener('click', () => playAudioMal() )
   
@@ -147,7 +133,7 @@ function playAudioDr() {
     audio.currentTime = 0;
     audio.play();
     myClickZhav();
-    changePlayPause(); 
+    playPause(); 
   }
   zhavButton.addEventListener('click', () => playAudioZhav() )
   
@@ -156,7 +142,7 @@ function playAudioDr() {
     audio.currentTime = 0;
     audio.play();
     myClickSlav();
-    changePlayPause(); 
+    playPause(); 
   }
   slavButton.addEventListener('click', () => playAudioSlav() )
 
@@ -165,26 +151,23 @@ function playAudioDr() {
     audio.currentTime = 0;
     audio.play();
     myClickLogoButton();
-    changePlayPause(); 
+    playPause(); 
   }
   logoButton.addEventListener('click', () => playAudioLogo() )
   
-  /*function playAudioPlay() {
+  function playAudioPlay() {
     audio.src = "./assets/audio/forest.mp3"
     audio.currentTime = 0;
     audio.play();
-    myClickLogoButton();
-    changePlayPause(); 
+    playPause(); 
   }
-  button.addEventListener('click', () =>  playAudioPlay() )*/
+  /*button.addEventListener('click', () =>  playAudioPlay() )*/
   
 
 // change playbut 
 
-function changePlayPause() {
-  
+/*function changePlayPause() {
     button.classList.add('pause')
-  
 }
 button.addEventListener('click', changePlayPause );
 
@@ -192,9 +175,9 @@ function changePausePlay() {
   if (button.classList.contains('pause')) {
     button.classList.remove('pause')
   }
-    
 }
-button.addEventListener('click', changePausePlay);
+button.addEventListener('click', changePausePlay);*/
+
   //change color button
 const navItem = document.querySelectorAll('.nav-item');
 function changeColorButton (event) {

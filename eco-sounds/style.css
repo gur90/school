@@ -191,4 +191,47 @@ a {
     html {
         overflow-x: hidden;
     }
+
+}
+@media (max-width: 320px) {
+    body {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+    header {
+        max-width: 320px;
+    }
+    .container {
+        max-width: 320px;
+    }
+    .photos {
+        width: 320px;
+    }
+   
+    .nav-item {
+        font-size: 10px;
+        padding: 0 5px;
+    line-height: 20px;
+    }
+    .logo {
+        display: none;
+    }
+    .rss {
+        width: 50px;
+        height: 20px;
+        
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .footer {
+        font-size: 10px;
+    }
+    .play {
+        width: 100px;
+      height: 100px;
+}
+.play.pause {
+    width: 100px;
+  height: 100px;
+}
 }
