@@ -25,6 +25,32 @@ body {
     margin: 0 auto;
     padding: 0 0;
 }
+.ru {
+    width: 30px;
+    background-color: white;
+    cursor: pointer;
+    transition: 2s;
+    box-shadow: 8px 3px 4px 5px rgb(231, 231, 149);
+}
+.ru:hover {
+    background-color: rgb(231, 231, 149);
+}
+.ru.active {
+    background-color: rgb(231, 231, 149);
+}
+.en {
+    width: 30px;
+    background-color: white;
+    cursor: pointer;
+    transition: 2s;
+    box-shadow: 8px 3px 4px 5px rgb(231, 231, 149);
+}
+.en:hover {
+    background-color: rgb(231, 231, 149);
+}
+.en.active {
+    background-color: rgb(231, 231, 149);
+}
 .img-text {
     position: relative;
     display: flex;
