@@ -23,6 +23,11 @@ async function getQuotes() {
   
   function changeImg() {
       var image = document.querySelector('.img');
-      image.src=imgs[++i];
+      image.src=imgs[i];
+      i++;
+      if(i>=imgs.length) {
+          i=0
+      }
+
   }
   button.addEventListener('click',() => changeImg())
