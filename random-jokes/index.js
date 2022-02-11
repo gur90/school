@@ -6,7 +6,7 @@ const objText = {
        'speak': 'Поговорим о жизни?'
    }
 }
-console.log("Ваша отметка - 65 балла(ов)\n Частично выполненные пункты: \n 1) Можно выбрать один из двух языков отображения цитат: en/ru или en/be — 5 балл(а)");
+console.log("Ваша отметка - 70 балла(ов)");
 const text = document.querySelector('.text');
 const author = document.querySelector('.author');
 const button = document.querySelector('.button');
@@ -17,7 +17,7 @@ async function getQuotes(url) {
     changeQuote ()
   }
   getQuotes("data.json");
-  
+
   button.addEventListener('click', changeQuote);
     function changeQuote () {
     const randomNum = Math.floor(Math.random()*data.length);
