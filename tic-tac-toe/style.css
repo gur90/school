@@ -1,0 +1,63 @@
+html {
+    cursor: pointer;
+}
+body {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+}
+.field td {
+width: 150px;
+height: 150px;
+border: 2px solid black;
+text-align: center;
+font-size: 20px;
+}
+.field.noActive {
+    width: 150px;
+height: 150px;
+border: 2px solid black;
+}
+.td {
+    font-size: 100px;
+    
+}
+.field {
+    margin: 0 auto;
+}
+.button {
+    width: 200px;
+    height: 70px;
+    margin: 20px auto;
+    border: 2px dotted black;
+    cursor: pointer;
+    font-size: 20px;
+}
+.button:hover {
+    background-color: rgb(233, 177, 177);
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gh {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    
+}
+.gh:hover {
+    color: rgb(233, 177, 177)
+}
+a {
+    text-decoration: none;
+}
+.rss {
+    width: 100px;
+    height: auto;
+    background-color: transparent
+}
+.rss:hover {
+    background-color: rgb(233, 177, 177);
+}
