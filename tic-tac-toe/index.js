@@ -1,3 +1,4 @@
+console.log("Ваша отметка - 55 балла(ов) \n Не выполненные/не засчитанные пункты: \n 1) Результаты последних 10 игр сохраняются в local storage. Есть таблица рекордов, в которой отображаются результаты предыдущих 10 игр \n Частично выполненные пункты: \n 1) По окончанию игры выводится её результат - выигравшая фигура и количество ходов от начала игры до её завершения — 5 балл(а) \n Все оставшиеся пункты выполнены и не имеют комментариев проверяющего");
 let cells = document.querySelectorAll('.td');
 let text = document.querySelectorAll('.text');
 let players = ['X', 'O'];
@@ -8,7 +9,7 @@ let audio = new Audio;
 audio.src = './assets/audio/1.mp4';
 audio.autoplay = true;
 }
-addEventListener('click', audioPlay)
+field.addEventListener('click', audioPlay)
 startPlay(cells);
 
 function startPlay(cells) {
@@ -22,13 +23,15 @@ function startPlay(cells) {
             }
             this.removeEventListener('click', letsGo)
             if (victory(cells)) {
-                alert('Победитель: ' + this.innerHTML)
+                let message1=localStorage.getItem('player')
+                alert('Победитель: ' + message1);
             } else if (i == 8) {
                 alert ('Победила дружба!');
             }
           i++;
         });
     }
+    
 }
 
 function victory(cells) {
@@ -48,6 +51,7 @@ function victory(cells) {
              cells[combination[1]].innerHTML == cells[combination[2]].innerHTML
              &&
              cells[combination[0]].innerHTML != '') {
+                 localStorage.setItem('player',  cells[combination[0]].innerHTML)
                  return true;
              }
     }
@@ -55,6 +59,17 @@ function victory(cells) {
 } 
 
 function reStart () {
-  
+  for(i=0; i<cells.length; i++) {
+      cells[i].innerHTML = "";
+  }
+  startPlay(cells);
 }
-button.addEventListener('click', () => reStart )
+button.addEventListener('click',  reStart)
+
+
+//счетчик кликов
+let count = 0;
+ function countClick() {
+     count++;
+}
+field.addEventListener('click', countClick)

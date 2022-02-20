@@ -25,6 +25,24 @@ border: 2px solid black;
 .field {
     margin: 0 auto;
 }
+.table {
+width: 30px;
+
+border: 2px solid black;
+text-align: center;
+}
+.th {
+    width: 10px;
+height: 10px;
+border: 2px solid black;
+text-align: center;
+}
+.tb {
+    width: 20px;
+height: 10px;
+border: 2px solid black;
+text-align: center;
+}
 .button {
     width: 200px;
     height: 70px;
