@@ -12,6 +12,7 @@ audio.autoplay = true;
 field.addEventListener('click', audioPlay)
 startPlay(cells);
 
+
 function startPlay(cells) {
     let i = 0
     for (let cell of cells) {
@@ -23,15 +24,17 @@ function startPlay(cells) {
             }
             this.removeEventListener('click', letsGo)
             if (victory(cells)) {
-                let message1=localStorage.getItem('player')
-                alert('Победитель: ' + message1);
+                let message1=localStorage.getItem('player');
+                let message2=localStorage.getItem('count')
+                alert('Победитель: ' + message1 + " ; "+ "количество ходов: " + message2);
             } else if (i == 8) {
                 alert ('Победила дружба!');
             }
           i++;
         });
     }
-    
+    localStorage.setItem('count', 0)
+  
 }
 
 function victory(cells) {
@@ -51,7 +54,7 @@ function victory(cells) {
              cells[combination[1]].innerHTML == cells[combination[2]].innerHTML
              &&
              cells[combination[0]].innerHTML != '') {
-                 localStorage.setItem('player',  cells[combination[0]].innerHTML)
+                 localStorage.setItem('player',  cells[combination[0]].innerHTML);
                  return true;
              }
     }
@@ -68,8 +71,12 @@ button.addEventListener('click',  reStart)
 
 
 //счетчик кликов
-let count = 0;
+
  function countClick() {
-     count++;
+     let result=localStorage.getItem('count');
+     result++;
+     localStorage.setItem('count', result);
 }
 field.addEventListener('click', countClick)
+
+
