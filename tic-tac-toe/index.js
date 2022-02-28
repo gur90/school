@@ -4,6 +4,7 @@ let text = document.querySelectorAll('.text');
 let players = ['X', 'O'];
 let button = document.querySelector('.button');
 let field = document.querySelector('.field')
+
 function audioPlay () {
 let audio = new Audio;
 audio.src = './assets/audio/1.mp4';
@@ -26,7 +27,8 @@ function startPlay(cells) {
             if (victory(cells)) {
                 let message1=localStorage.getItem('player');
                 let message2=localStorage.getItem('count')
-                alert('Победитель: ' + message1 + " ; "+ "количество ходов: " + message2);
+                let message = alert('Победитель: ' + message1 + " ; "+ "количество ходов: " + message2);
+                text.innerHTML=message1;
             } else if (i == 8) {
                 alert ('Победила дружба!');
             }
@@ -34,7 +36,7 @@ function startPlay(cells) {
         });
     }
     localStorage.setItem('count', 0)
-  
+    
 }
 
 function victory(cells) {
